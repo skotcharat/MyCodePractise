@@ -1,0 +1,36 @@
+package javaproject;
+/**
+ * 
+ * @author student
+ * 1, 1, 2, 3, 3, 5, 4, 7, 5, 9, 6, 11, 7,...50
+ */
+
+public class Logic2 {
+	public static void main(String[] args) {
+
+		int sumFisrt = 0;
+		int sumSecond = 1;
+		int i;
+		int k = 1;
+		int j = 50;
+		
+		System.out.print(sumSecond+ "Y"+ " ,");
+		//System.out.print(k + " ,");
+		
+		for(i = 0; i < j; i++) {
+			
+			
+			
+			
+			
+			sumFisrt += k + 1  ;
+			System.out.print(sumFisrt+ "N" + " ,");
+			sumSecond = i + 1;
+			System.out.print(sumSecond+ "D"+ " ,");
+			
+		}
+		
+		
+		
+	}
+}
