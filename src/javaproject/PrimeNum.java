@@ -19,6 +19,7 @@ public class PrimeNum {
 	
 	public static void main(String[] args) {
 		System.out.println(isPrime(15));	
+		System.out.println(isPrime(16));
 	}
 	
 	public static Boolean isPrime(Integer n) {

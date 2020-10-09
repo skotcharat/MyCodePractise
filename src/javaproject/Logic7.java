@@ -9,24 +9,20 @@ If the number does not exist return -1.
  */
 
 public class Logic7 {
-	
-	
-	private static int list;
-
-
 
 	public static void main(String[] args) {
-		System.out.println(search(4, {2, 4}));
-		
+		Integer[] list = {2, 3, 4};	
+		System.out.println(search(4, list));	
 	}
 	
-	
-
 	public static int search(Integer n, Integer[] list) {
-		return n;
-		
+		for(int i = 0; i < list.length; i++) {
+			if(list[i] == n) {
+				return i;
+			}
+		}
+		return -1;		
 	
-	}
-		
+	}		
 }
 

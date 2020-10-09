@@ -17,34 +17,30 @@ public class FindMaximum {
 	
 	public static void main(String[] args) {
 		Integer dims[] = {8, 118, 16, 100};
-		System.out.println(maximum(dims));	
+		System.out.println(maximum1(dims));	
+		System.out.println(maximum2(dims));
 	}
 	
-	public static Integer maximum(Integer[] list) {
+	public static Integer maximum1(Integer[] list) {
 		
-//		Collection col = Arrays.asList(list);
-//		Integer max = (Integer)Collections.max(col);
-		
-		// System.out.println(list.get(list.size() - 1));
 		int max = list[0];
 		
-		for(int i = 0; i < list.length; i++) { // for (int i : list)
+		for(int i = 0; i < list.length; i++) { 
 			if(list[i] > max) {
 			      max = list[i];
 			    }
 		}
 
 		return max;
+	}
 		
-		
-		
-		
-		
-		
-		
-		
+		public static Integer maximum2(Integer[] list) {
+			
+			Collection col = Arrays.asList(list);
+			Integer max = (Integer)Collections.max(col);
+			
+			return max;
 	
-		
 	}
 		
 }

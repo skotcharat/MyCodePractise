@@ -13,6 +13,7 @@ public class PalindromeCheck {
 	
 	public static void main(String[] args) {
 		System.out.println(isPalindrome("abcba"));	
+		System.out.println(isPalindrome("abcbac"));
 	}
 	
 	public static boolean isPalindrome(String word) {

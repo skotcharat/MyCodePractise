@@ -14,15 +14,13 @@ public class GreatestCommonDivisor {
 		System.out.println(gcd(55, 5));	
 	}
 	
-	public static Integer gcd(Integer p, Integer q) {
-		
-		int divide = 0;
-		if(p > q) {
-			divide = (p %
-					q);
-		}
-		return divide;
-		
+	public static Integer gcd(Integer num1, Integer num2) {
+		int gcd = 0;
+		for(int i = 1; i <= num1 && i <= num2; i++) {
+            if(num1 % i == 0 && num2 % i == 0)
+                gcd = i;
+        }
+		return gcd;
 	}
 		
 	

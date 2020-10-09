@@ -11,7 +11,7 @@ public class Logic6 {
 	
 	
 	public static void main(String[] args) {
-		System.out.println(factorial(4));
+		System.out.println(factorial(5));
 		
 	}
 	

@@ -8,29 +8,27 @@ package javaproject;
 public class Logic2 {
 	public static void main(String[] args) {
 
-		int sumFisrt = 0;
+		int sumFisrt = 1;
 		int sumSecond = 1;
-		int i;
-		int k = 1;
-		int j = 50;
+		int j = 49;
 		
-		System.out.print(sumSecond+ "Y"+ " ,");
-		//System.out.print(k + " ,");
 		
-		for(i = 0; i < j; i++) {
-			
-			
-			
-			
-			
-			sumFisrt += k + 1  ;
-			System.out.print(sumFisrt+ "N" + " ,");
-			sumSecond = i + 1;
-			System.out.print(sumSecond+ "D"+ " ,");
-			
+		System.out.print(sumFisrt + ", ");
+		for(int i = 0; i < j; i++) {
+			if(sumFisrt < j && sumSecond < j) {
+				System.out.print(sumFisrt + ", "); 
+				sumFisrt = sumFisrt + 2;
+						
+				sumSecond = i + 2;
+				System.out.print(sumSecond + ", ");
+			} else {
+				break;
+			}			 			
 		}
-		
-		
-		
+		System.out.print(sumFisrt);
+			
 	}
-}
+		
+}		
+		
+
